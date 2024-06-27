@@ -12,7 +12,7 @@ const content = {
     about: `
         <section id="about" class="py-5">
             <div class="container">
-                <h2 class="text-center">About Me</h2>
+                <h2 class="text-center">About</h2>
                 <p class="text-center">Deep Dynamix was founded with a mission to revolutionize industries through the power of robotics and AI. Our team of experts combines deep technical knowledge with a passion for innovation, delivering solutions that drive success for our clients.</p>
             </div>
         </section>
