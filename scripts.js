@@ -5,7 +5,7 @@ const content = {
             <div>
                 <h1>Welcome to Deep Dynamix</h1>
                 <p>Innovating the Future with Robotics and AI</p>
-                <a href="#" class="btn btn-primary" onclick="loadContent('services')">Explore Our Services</a>
+                <a href="#" class="btn btn-primary" onclick="loadContent('services')">Explore Projects</a>
             </div>
         </section>
     `,
@@ -20,7 +20,7 @@ const content = {
     services: `
         <section id="services" class="py-5">
             <div class="container">
-                <h2 class="text-center">My Projects</h2>
+                <h2 class="text-center"> Projects</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <h3>Robotics</h3>
@@ -55,7 +55,7 @@ const content = {
     contact: `
         <section id="contact" class="py-5">
             <div class="container">
-                <h2 class="text-center">Contact Me</h2>
+                <h2 class="text-center">Contact </h2>
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-6">
