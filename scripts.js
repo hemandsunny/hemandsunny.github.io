@@ -38,27 +38,6 @@ const content = {
             </div>
         </section>
     `,
-    solutions: `
-        <section id="solutions" class="py-5">
-            <div class="container">
-                <h2 class="text-center">Solutions</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3>Healthcare</h3>
-                        <p>Enhancing patient care with AI-driven diagnostics and robotic surgery.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Manufacturing</h3>
-                        <p>Streamlining production lines with automation and computer vision.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Logistics</h3>
-                        <p>Optimizing supply chain management with intelligent robotics solutions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    `,
     blog: `
         <section id="blog" class="py-5 bg-light">
             <div class="container">
