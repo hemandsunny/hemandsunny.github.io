@@ -55,7 +55,7 @@ const content = {
     contact: `
         <section id="contact" class="py-5">
             <div class="container">
-                <h2 class="text-center">Contact Us</h2>
+                <h2 class="text-center">Contact Me</h2>
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-6">
