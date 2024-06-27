@@ -20,7 +20,7 @@ const content = {
     services: `
         <section id="services" class="py-5">
             <div class="container">
-                <h2 class="text-center">Our Services</h2>
+                <h2 class="text-center">Our Projects</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <h3>Robotics</h3>
