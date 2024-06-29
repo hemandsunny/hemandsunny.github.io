@@ -3,8 +3,8 @@ const content = {
     home: `
         <section class="text-center text-dark d-flex justify-content-center align-items-center">
             <div>
-                <h1>Welcome to Deep Dynamix</h1>
-                <p>Innovating the Future with Robotics and AI</p>
+                <h1>Welcome!</h1>
+                <p>Join me on my journey as I learn, share experiences, and explore the exciting realms of Robotics and AI, driven by a passion to innovate in these fields.</p>
                 <a href="#" class="btn btn-primary" onclick="loadContent('services')">Explore Projects</a>
             </div>
         </section>
