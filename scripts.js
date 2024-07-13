@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const apiURL = 'https://hemand11.pythonanywhere.com/api'; // Adjust URL if needed
+    const apiURL = 'http://127.0.0.1:5000/api'; // Adjust URL if needed
   
     // Function to fetch and display content for a specific tab
     function loadTabContent(tabName) {
@@ -7,31 +7,31 @@ $(document).ready(function() {
         let content = '';
   
         // Generate content based on the tab
-        if (tabName === 'services') {
-          content += `<h2>Our Services</h2>`;
+        if (tabName === 'projects') {
+          content += `<h2>Projects</h2><br>`;
           content += `<div class="row">`;
           data.forEach(service => {
             content += `
-              <div class="col-lg-4 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">${service.title}</h5>
-                    <p class="card-text">${service.description}</p>
-                  </div>
+              <div class="col-lg-4 mb-4 text-justify">
+                <div>
+                  
+                    <h5>${service.title}</h5>
+                    <p>${service.description}</p>
+
                 </div>
               </div>`;
           });
           content += `</div>`;
         } else if (tabName === 'about') {
-          content += `<h2>About Us</h2>`;
+          content += `<h2>About </h2><br>`;
           content += `<p>${data.about}</p>`;
         } else if (tabName === 'contact') {
-          content += `<h2>Contact Us</h2>`;
+          content += `<h2>Contact </h2><br>`;
           content += `<p>Email: ${data.email}</p>`;
-          content += `<p>Phone: ${data.phone}</p>`;
+          //content += `<p>Phone: ${data.phone}</p>`;
         } else {
-          content += `<h2>Welcome to VizReLabs</h2>`;
-          content += `<p>Innovative Solutions for Modern Problems</p>`;
+          content += `<h2>Welcome to VizReLABS</h2>`;
+          content += `<p>random stuffs , jump in.</p>`;
         }
   
         // Fade out current content
