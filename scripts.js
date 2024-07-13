@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const apiURL = 'hemand11.pythonanywhere.com/api'; // Adjust URL if needed
+    const apiURL = 'https://hemand11.pythonanywhere.com/api'; // Adjust URL if needed
   
     // Function to fetch and display content for a specific tab
     function loadTabContent(tabName) {
