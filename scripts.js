@@ -28,6 +28,9 @@ $(document).ready(function() {
         } else if (tabName === 'contact') {
           content += `<h2>Contact </h2><br>`;
           content += `<p>Email: ${data.email}</p>`;
+            content += `<p>${data.GitHub}</p>`;
+            content += `<p>${data.LinkedIn}</p>`;
+            content += `<p>${data.X}</p>`;
           //content += `<p>Phone: ${data.phone}</p>`;
         } else {
           content += `<h2>Welcome to VizReLABS</h2>`;
