@@ -33,8 +33,8 @@ $(document).ready(function() {
             content += `<p>${data.X}</p>`;
           //content += `<p>Phone: ${data.phone}</p>`;
         } else {
-          content += `<h2>Welcome to VizReLABS</h2>`;
-          content += `<p>random stuffs , jump in.</p>`;
+          content += `<h2>Hi, I am Hemand.</h2>`;
+          content += `<p>doing random stuffs , jump in.</p>`;
         }
   
         // Fade out current content
@@ -44,7 +44,7 @@ $(document).ready(function() {
         setTimeout(function() {
           $('#tab-content').html(content);
           $('#tab-content').addClass('fade-in');
-        }, 300); // Ensure content changes after fade-out transition (0.3s)
+        }, 150); // Ensure content changes after fade-out transition (0.15s)
   
       });
     }
