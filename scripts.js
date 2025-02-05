@@ -17,6 +17,7 @@ $(document).ready(function() {
                   
                     <h5>${service.title}</h5>
                     <p>${service.description}</p>
+                    <p>${service.techstack}</p>
 
                 </div>
               </div>`;
