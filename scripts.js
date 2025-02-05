@@ -36,7 +36,7 @@ $(document).ready(function() {
           content += `<h2>Hi, I am Hemand.</h2>`;
           content += `<p>doing random stuffs , jump in.</p>`;
           content += `<p>interested in Embedded Systems, Robotics and AI.</p>`;
-          content += `<p><button>Projects</button><button>Resume</button><button>Contact</button></p>`;
+          content += `<p><button>Projects</button> <button>Resume</button> <button>Contact</button></p>`;
         }
   
         // Fade out current content
