@@ -7,71 +7,220 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            /* Removed background */
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
         }
         .overlay {
-            background-color: #e0e8f0;
             min-height: 100vh;
-            color: white;
-        }
-        .card {
-            background: rgba(255, 255, 255, 0.8);
+            color: black;
         }
         header {
-            background-image: url('header-cover.png'); /* Added header background */
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(120deg, #007bff, #0056b3);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-custom {
+            background-color: white;
+            color: #007bff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-custom:hover {
+            background-color: #e0e8f0;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        .section-title {
+            border-left: 5px solid #007bff;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        .card {
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .list-group-item {
+            border: none;
+            padding: 10px 15px;
+        }
+        .footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+        .footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="overlay">
-        <header class="bg-dark text-dark text-center py-4">
-            <h1>Hemand Sunny</h1>
-            <p>Robotics & AI Post Graduate<br> ECE Graduate</p>
+        <!-- Header Section -->
+        <header>
+            <div class="profile-container">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+                <div>
+                    <h1 class="mb-1">Hemand Sunny</h1>
+                    <p class="mb-2">Robotics & Automation Post Graduate | ECE Graduate</p>
+                    <!--<a href="#" class="btn-custom" download>Download Resume</a>-->
+                </div>
+            </div>
         </header>
+
         <div class="container mt-4">
-            <section class="card p-4 mb-4 shadow-sm">
-                <h2>About Me</h2>
-                <p>I'm a passionate Robotics and IoT enthusiast with a background in Electronics and Communication Engineering. My work focuses on autonomous systems, AI-driven navigation, and assistive technology. I also have a keen interest in web development, exploring ways to integrate AI and robotics with modern web technologies. Additionally, I am actively learning technologies related to embedded systems to enhance my expertise in hardware-software integration.</p>
+            <!-- About Section -->
+            <section class="card p-4 mb-4">
+                <h2 class="section-title">About Me</h2>
+                <p>I am a passionate Robotics and AI enthusiast, specializing in autonomous systems, AI-driven navigation, and assistive technology. 
+                I am also exploring embedded systems and web development to integrate AI and robotics with modern technologies.</p>
             </section>
-            <section class="card p-4 mb-4 shadow-sm">
-                <h2>Projects</h2>
+
+            <!-- Projects Section -->
+<section class="p-4 mb-4">
+    <h2>Projects</h2>
+
+    
+    <!-- Robotics & Automation Projects -->
+    <h4 class="mt-4">Robotics</h4>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <strong>Intelligent Navigation System for Visually Impaired</strong><br>
+            <em>Technologies:</em> Python, YOLOv5, OpenCV, Jetson Nano, ROS<br>
+            <p>A real-time navigation system using stereo vision and LiDAR to assist visually impaired individuals.</p>
+            <a href="#" class="text-primary">Project Link</a>
+        </li>
+        <li class="list-group-item">
+            <strong>Line Follower Robot using Arduino</strong><br>
+            <em>Technologies:</em> Arduino, IR Sensors, Motor Control<br>
+            <p>A simple autonomous robot that follows a black line using IR sensors and PID control.</p>
+            <a href="#" class="text-primary">Project Link</a>
+        </li>
+    </ul>
+
+    <!-- AI & Robotics Projects -->
+    <h4 class="mt-3">AI & Computer Vision</h4>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <strong>Obstacle Avoidance using Monocular Camera</strong><br>
+            <em>Technologies:</em> Python, OpenCV, YOLOv5, MiDAS<br>
+            <p>An AI-powered system that detects and avoids obstacles in real time for autonomous robots.</p>
+            <a href="#" class="text-primary">Project Link</a>
+        </li>
+        <li class="list-group-item">
+            <strong>Trash Detection System using AI</strong><br>
+            <em>Technologies:</em> YOLOv5, OpenCV, Python<br>
+            <p>An AI model that detects and classifies waste materials to improve waste management efficiency.</p>
+            <a href="#" class="text-primary">Project Link</a>
+        </li>
+    </ul>
+
+    <!-- Embedded Systems & IoT Projects -->
+    <h4 class="mt-4">Embedded Systems & IoT</h4>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <strong>Smart Attendance System</strong><br>
+            <em>Technologies:</em> Python, ESP32, RFID, OpenCV, MQTT<br>
+            <p>An AI-powered attendance system that uses facial recognition and RFID for authentication.</p>
+            <a href="#" class="text-primary">Project Link</a>
+        </li>
+        <li class="list-group-item">
+            <strong>Smart Alerting System</strong><br>
+            <em>Technologies:</em> ESP32, PIR, Buzzer, Push Notification API<br>
+            <p>A real-time alert system for emergency situations using cloud-based messaging and sensor inputs.</p>
+            <a href="#" class="text-primary">Project Link</a>
+        </li>
+    </ul>
+
+
+    <!-- Web Development Projects -->
+    <h4 class="mt-4">Web Development (Backend)</h4>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <strong>Personal Blog Website</strong><br>
+            <em>Technologies:</em> Basic Frontend, Flask, SQLite<br>
+            <p>A responsive portfolio website showcasing my work in AI, Robotics, and Embedded Systems.</p>
+            <a href="#" class="text-primary">Project Link</a>
+        </li>
+        <li class="list-group-item">
+            <strong>Interactive Chatbot</strong><br>
+            <em>Technologies:</em> Python, Gemini API, NLP<br>
+            <p>An AI chatbot that interacts with users using natural language processing.</p>
+            <a href="#" class="text-primary">Project Link</a>
+        </li>
+        <li class="list-group-item">
+            <strong>URL Shortener</strong><br>
+            <em>Technologies:</em> Basic Frontend, Flask, SQLite<br>
+            <p>A web-based URL shortener with analytics and admin control for managing shortened links.</p>
+            <a href="#" class="text-primary">Project Link</a>
+        </li>
+    </ul>
+</section>
+
+
+            <!-- Skills Section -->
+            <section class="card p-4 mb-4">
+                <h2 class="section-title">Skills</h2>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Intelligent Navigation System for Visually Impaired</li>
-                    <li class="list-group-item">Obstacle avoidance using AI</li>
-                    <li class="list-group-item">Line Follower Robot using Arduino</li>
-                    <li class="list-group-item">Smart Alerting System</li>
-                    <li class="list-group-item">Smart Attendance System using Face Recognition and RFID</li>
-                    <li class="list-group-item">Trash Detection System using AI</li>
-                    <li class="list-group-item">Interactive Chatbot</li>
-                </ul>
-            </section>
-            <section class="card p-4 mb-4 shadow-sm">
-                <h2>Skills</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Python</li>
-                    <li class="list-group-item">C</li>
-                    <li class="list-group-item">ROS</li>
-                    <li class="list-group-item">Arduino</li>
-                    <li class="list-group-item">Jetson Nano</li>
+                    <li class="list-group-item"><strong>Programming:</strong> Python, Embedded C, Web Development (HTML,CSS, Javascript,Python-Flask)</li>
+                    <li class="list-group-item"><strong>Robotics:</strong> ROS, RViz, Gazebo, LiDAR</li>
+                    <li class="list-group-item"><strong>AI & Computer Vision:</strong> PyTorch, OpenCV, YOLOv5, MiDAS</li>
+                    <li class="list-group-item"><strong>Embedded Systems:</strong> Arduino, ESP32, Jetson Nano</li>
                     
                 </ul>
             </section>
-            <section class="card p-4 mb-4 shadow-sm">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:hemandsunny@gmail.com" >hemandsunny@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/hemand-sunny/" class="text-primary">LinkedIn</a></p>
+
+            <!-- Certifications Section -->
+            <section class="card p-4 mb-4">
+                <h2 class="section-title">Certifications</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        Automation in Manufacturing - NPTEL 
+                        <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL24ME139S95710001804046890" class="text-primary">View Certificate</a>
+                    </li>
+                    <li class="list-group-item">
+                        Programming, Data Structures And Algorithms Using Python - NPTEL 
+                        <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL20CS70S41820156075354" class="text-primary">View Certificate</a>
+                    </li>
+                </ul>
             </section>
         </div>
-        <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Hemand Sunny. All Rights Reserved.</p>
-    <div class="mt-2">
-        <a href="https://www.linkedin.com/in/hemand-sunny/" class="text-white mx-2">LinkedIn</a> |
-        <a href="https://github.com/hemandsunny" class="text-white mx-2">GitHub</a> |
-        <a href="mailto:hemandsunny@gmail.com" class="text-white mx-2">Email</a>
-    </div>
-</footer>
+
+        <!-- Footer -->
+        <footer class="footer"><p><i>Last Updated - 20:35 23/03/2025</i> </p>
+            <p>&copy; 2025 Hemand Sunny. All Rights Reserved.</p>
+            <div>
+                <a href="https://www.linkedin.com/in/hemand-sunny/">LinkedIn</a> |
+                <a href="https://github.com/hemandsunny">GitHub</a> |
+                <a href="mailto:hemandsunny@gmail.com">Email</a>
+            </div>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
